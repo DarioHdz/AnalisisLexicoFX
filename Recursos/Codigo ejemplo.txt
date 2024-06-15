@@ -1,0 +1,16 @@
+public class main { 
+public static void main ( String [] args ) { 
+Scanner t = new Scanner ( System.in ) ;
+System.out.println ( "Serie de Fibonacci" ) ;
+System.out.println ( "Ingrese el fn a buscar:" ) ;
+int entero = t.nextInt ( ) ; 
+Fibonacci ( entero , 0 , 1 ) ;
+}
+	
+public static void Fibonacci ( long entero , long f1 , long f2 ) { 
+if ( entero > 0 ) {
+System.out.println ( " " + f2 ) ;
+Fibonacci ( entero - 1 , f2 , f1 + f2 ) ;
+}
+}
+}
